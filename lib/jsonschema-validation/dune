@@ -1,0 +1,4 @@
+(library
+ (name jsonschema_validation)
+ (public_name jsonschema-validation)
+ (libraries jsonschema_core re ipaddr domain-name ptime str idna))

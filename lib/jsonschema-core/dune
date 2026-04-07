@@ -1,0 +1,4 @@
+(library
+ (name jsonschema_core)
+ (public_name jsonschema-core)
+ (libraries yojson uri re))

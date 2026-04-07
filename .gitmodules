@@ -1,0 +1,7 @@
+[submodule "test/suite"]
+	path = test/suite
+	url = https://github.com/json-schema-org/JSON-Schema-Test-Suite.git
+[submodule "test/spec"]
+	path = test/spec
+	url = https://github.com/json-schema-org/json-schema-spec.git
+	branch = draft-07

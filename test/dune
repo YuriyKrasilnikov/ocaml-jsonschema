@@ -1,0 +1,6 @@
+(tests
+ (names test_json_pointer test_instance test_error test_regex test_uri_util test_schema test_registry test_compiler test_suite_runner)
+ (libraries jsonschema_core jsonschema_validation alcotest str yojson)
+ (deps (glob_files suite/tests/draft7/*.json)
+       (glob_files suite/remotes/**/*.json)
+       (file spec/schema.json)))
