@@ -1,4 +1,4 @@
-(lang dune 3.0)
+(lang dune 3.15)
 
 (name jsonschema)
 
@@ -36,5 +36,5 @@
   (ipaddr (>= 5.0))
   (domain-name (>= 0.4))
   (ptime (>= 1.0))
-  (idna (>= 0.2))
+  (idna (>= 0.3))
   (alcotest :with-test)))

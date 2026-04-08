@@ -7,14 +7,14 @@ license: "ISC"
 homepage: "https://github.com/YuriyKrasilnikov/ocaml-jsonschema"
 bug-reports: "https://github.com/YuriyKrasilnikov/ocaml-jsonschema/issues"
 depends: [
-  "dune" {>= "3.0"}
+  "dune" {>= "3.15"}
   "ocaml" {>= "5.1"}
   "jsonschema-core" {= version}
   "re" {>= "1.10"}
   "ipaddr" {>= "5.0"}
   "domain-name" {>= "0.4"}
   "ptime" {>= "1.0"}
-  "idna" {>= "0.2"}
+  "idna" {>= "0.3"}
   "alcotest" {with-test}
   "odoc" {with-doc}
 ]
