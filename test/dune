@@ -1,7 +1,7 @@
 (tests
  (names test_json_pointer test_instance test_error test_regex test_uri_util test_schema test_registry test_compiler)
  (modules test_json_pointer test_instance test_error test_regex test_uri_util test_schema test_registry test_compiler)
- (libraries jsonschema_core jsonschema_validation alcotest yojson))
+ (libraries jsonschema_core alcotest str yojson))
 
 (executable
  (name test_suite_runner)
