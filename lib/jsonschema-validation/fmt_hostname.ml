@@ -8,7 +8,7 @@ let check_hostname s =
   else if s.[0] = '.' then false
   (* Must be pure ASCII for hostname format *)
   else if String.length s <> Jsonschema_core.Instance.utf8_length s then false
-  else Idna.is_valid_hostname s
+  else Idna.Registration.is_valid_hostname s
 
 (** Replace Unicode dot separators with ASCII dot.
     U+3002 IDEOGRAPHIC FULL STOP, U+FF0E FULLWIDTH FULL STOP,
@@ -47,4 +47,4 @@ let check_idn_hostname s =
   if len = 0 || len > 253 then false
   else if s.[len - 1] = '.' then false
   else if s.[0] = '.' then false
-  else Idna.is_valid_hostname s
+  else Idna.Registration.is_valid_hostname s

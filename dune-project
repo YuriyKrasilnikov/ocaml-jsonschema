@@ -36,5 +36,5 @@
   (ipaddr (>= 5.0))
   (domain-name (>= 0.4))
   (ptime (>= 1.0))
-  (idna (>= 0.3))
+  (idna (and (>= 0.4.0) (< 0.5)))
   (alcotest :with-test)))

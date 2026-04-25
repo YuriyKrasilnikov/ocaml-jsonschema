@@ -3,6 +3,11 @@
  (modules test_json_pointer test_instance test_error test_regex test_uri_util test_schema test_registry test_compiler)
  (libraries jsonschema_core alcotest str yojson))
 
+(test
+ (name test_validation_format)
+ (modules test_validation_format)
+ (libraries jsonschema_core jsonschema_validation alcotest yojson))
+
 (executable
  (name test_suite_runner)
  (modules test_suite_runner)
